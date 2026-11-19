@@ -112,3 +112,25 @@ The custom Python active response executed following the Rule 5712 alerts and re
 | Response logging | Two executions verified |
 
 **Note:** The response was simulated. No actual firewall modification, IP blocking, or network containment was performed.
+
+## Project Files
+
+The following files contain the Python automation, Wazuh configuration, and incident investigation documentation developed for this lab.
+
+### Python Active Response Script
+
+**[View Python Script](scripts/soc-lab-response.py)**
+
+Custom Python script that processes Wazuh Rule 5712 alerts, extracts relevant event information, and records simulated containment actions. Includes input validation, error handling, and structured response logging.
+
+### Incident Investigation Report
+
+**[Read SSH Brute-Force Investigation](incident-reports/ssh-brute-force-investigation.md)**
+
+Technical investigation documenting the simulated SSH brute-force activity, alert correlation, MITRE ATT&CK mapping, response validation, troubleshooting, and remediation recommendations.
+
+### Wazuh Active Response Configuration
+
+**[View Active Response XML](config/active-response.xml)**
+
+XML configuration snippet defining the custom active response command and its Rule 5712 trigger. The snippet must be added inside an existing Wazuh Manager `<ossec_config>` section.
