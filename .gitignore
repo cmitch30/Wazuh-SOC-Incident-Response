@@ -1,0 +1,32 @@
+
+# Python generated files
+__pycache__/
+*.pyc
+*.pyo
+
+# Credentials and environment files
+.env
+.env.*
+!.env.example
+credentials.env
+*secret*.env
+
+# Certificates and private keys
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Configuration backups
+*.backup
+*.bak
+*.pre-soc-response
+
+# Local logs and temporary files
+*.log
+*.tmp
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
